@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ 地址：杭州市萧山区风情大道与建设一路交叉口中栋国际北干科创园1403
+  ~ 联系电话：0571-82757223
+  ~ 邮箱：zhuwenli@readyidu.comvv
+  ~ 版权所有：杭州益读科技有限公司
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lhx.mapper.TestMapper">
+    <select id="testSelect" resultType="java.util.Map">
+        select * from t_user_info limit 0,2
+    </select>
+</mapper>

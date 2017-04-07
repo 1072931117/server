@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration status="OFF">
+    <!--先定义所有的appender-->
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </appenders>
+    <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <loggers>
+        <!--<logger name="org.apache.http" level="debug"/>-->
+        <logger name="org.springframework.web" level="debug"/>
+        <logger name="org.springframework.session" level="debug"/>
+        <!--建立一个默认的root的logger-->
+        <root level="info">
+            <appender-ref ref="Console"/>
+        </root>
+
+    </loggers>
+</configuration>
