@@ -12,8 +12,8 @@ import javax.annotation.PostConstruct;
 
 @Configurable
 @Import(value = {RedisConfig.class,DataBaseConfig.class})
-@PropertySource("classpath:/${package.environment}/properties/jdbc-base.properties")
-@PropertySource("classpath:/${package.environment}/properties/redis-base.properties")
+@PropertySource("classpath:/properties/jdbc-base.properties")
+@PropertySource("classpath:/properties/redis-base.properties")
 public class CoreConfig {
 
     @PostConstruct

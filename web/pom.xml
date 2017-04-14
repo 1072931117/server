@@ -44,7 +44,7 @@
                         <!--不检查web.xml-->
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                         <!--打出的包名-->
-                        <warName>manager</warName>
+                        <warName>web</warName>
                         <webResources>
                             <resource>
                                 <directory>src/main/resources/${package.environment}</directory>
