@@ -47,7 +47,7 @@ public class DubboProviderConfig {
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setLogger("slf4j");
+        applicationConfig.setLogger("log4j");
         applicationConfig.setName(env.getProperty("dubbo.application.name"));
         return applicationConfig;
     }
